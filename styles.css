@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="arb2">Arabesk Radyo </h2>
+        <p class= "station-name" id="station-name">Select Staion </p>
+
+
+        <div class="stations">
+            <button onclick="changeStation('https://yayin.radyoarabesk.com.tr:8000/stream', 'Radyo Arabesk')">
+                <img src="src/radyo-arabesk.png" alt="Radyo Arabesk">
+            </button>
+            <button onclick="changeStation('http://yayin.damarfm.com:8080/stream', 'Damar FM')">
+                <img src="src/DamarFM.png" alt="Damar FM">
+            </button>
+            <button onclick="changeStation('http://yayin.arabeskfm.biz:8042/stream', 'Arabesk FM')">
+                <img src="src/arabeskFM.png" alt="Arabesk FM">
+            </button>
+             <button onclick="changeStation('http://95.173.161.131:9832/stream', 'Radio 11')">
+                <img src="src/radyo11.png" alt="Radio 11">
+            </button>
+        </div>
+
+        <audio class="player" id="player" controls></audio>
+        <div class="radioo">
+        <button id="play-btn">
+    <img id="play-icon" src="src/play.png" alt="Play">
+</button>
+        <input class="volume" type="range" id="volume-slider" min="0" max="100" value="50">
+        </div>
+    </div>
+    <footer>
+                <h4 style="color: beige; font-family: arabesk;">Biz Babadan Boyle gorduk</h4>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
